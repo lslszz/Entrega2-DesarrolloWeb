@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+/* navegacion con flexbox */
+nav {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 10px;
+}
+
+nav a {
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* se me olvido esto antes */
+}
+
+/* pseudo-clases */
+nav a:hover {
+    background-color: #555;
+}
+
+nav a:focus {
+    outline: 2px solid #667eea;
+    background-color: #555;
+}
+
+#inicio h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+section {
+    margin: 10px auto;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+#inicio ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+.img-container {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-container img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* formulario */
+#form-sugerir {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#form-sugerir label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form-sugerir input,
+#form-sugerir textarea {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 8px; /* esto se me olvido antes tambien */
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-enviar:hover {
+    background-color: #5a67d8;
+}
+
+/* tabla */
+#tabla-pelis {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#tabla-pelis th,
+#tabla-pelis td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-pelis th {
+    background-color: #333;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.clickeable {
+    cursor: pointer;
+}
+
+.clickeable:hover {
+    color: #667eea;
+}
