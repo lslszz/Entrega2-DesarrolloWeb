@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- meta tags requeridos -->
+    <meta charset="UTF-8"> <!-- codificacion en utf-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cine con Sentido - Películas y series que invitan a reflexionar sobre temas profundos"> <!-- descripcion de la pagina -->
+    <meta name="keywords" content="cine, peliculas, filosofia, reflexion"> <!-- palabras clave para el buscador -->
+    <title>Cine con Sentido</title> <!-- titulo de la pagina -->
+    
+    <!-- hoja de estilos externa en carpeta css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- etiquetas semanticas implementadas: header, nav, section, footer, figure -->
+    
+    <!-- etiqueta semantica header -->
+    <header>
+        <h1>Cine con Sentido</h1> <!-- etiqueta h1 principal -->
+    </header>
+    
+    <!-- etiqueta semantica nav -->
+    <nav>
+        <ul> <!-- lista no ordenada -->
+            <li><a href="#inicio"><b>Inicio</b></a></li> <!-- enlaces y etiquetas b -->
+            <li><a href="#peliculas"><b>Películas</b></a></li>
+            <li><a href="#recomendaciones"><b>Top Recomendadas</b></a></li>
+            <li><a href="#sugerir"><b>Sugerir</b></a></li>
+        </ul>
+    </nav>
+    
+    <!-- etiqueta semantica section -->
+    <section id="inicio"> <!-- id para identificacion -->
+        <h2><b>Bienvenido</b></h2>
+        
+        <!-- etiqueta semantica figure -->
+        <figure class="img-container"> <!-- clase para estilizacion -->
+            <img src="imagenes/cine.png" alt="cine">
+        </figure>
+        
+        <br> <!-- etiquetas br -->
+        <br>
+        <h2>¿Por qué el cine reflexivo?</h2>
+        <br>
+        
+        <!-- lista no ordenada ul con elementos li -->
+        <ul>
+            <li>Te ayuda a entender mejor a las personas</li>
+            <li>Te hace preguntas que normalmente no te haces</li>
+            <li>Es más interesante que las películas comerciales</li>
+            <li>Te deja pensando días después</li>
+        </ul>
+        <br>
+    </section>
+    
+    <section id="peliculas">
+        <h2>Nuestras Recomendaciones</h2>
+        <p>Películas que han marcado generaciones con sus mensajes profundos:</p> <!-- etiqueta p -->
+        <h3>Algunas de nuestras favoritas:</h3>
+        
+        <!-- lista ordenada ol -->
+        <ol>
+            <li><b>La vida es bella</b> - Esperanza en tiempos oscuros</li>
+            <li><b>Matrix</b> - Cuestionando la realidad</li>
+            <li><b>La elegancia del erizo</b> - Conexiones humanas inesperadas</li>
+            <li><b>Jojo Rabbit</b> - Inocencia vs. ideología</li>
+        </ol>
+    </section>
+    
+    <section id="recomendaciones">
+        <h2>Películas Más Recomendadas</h2>
+        <p>Basado en las sugerencias de nuestros visitantes:</p>
+        
+        <!-- tabla requerida -->
+        <table id="tabla-pelis"> <!-- id para estilizacion -->
+            <tr>
+                <th>Película</th>
+                <th>Año</th>
+                <th>Género</th>
+                <th>Duración</th>
+                <th>¿Por qué verla?</th>
+            </tr>
+            <tr>
+                <td>La vida es bella</td>
+                <td>1997</td>
+                <td>Drama</td>
+                <td>116 min</td>
+                <td>Te hace reflexionar sobre la esperanza</td>
+            </tr>
+            <tr>
+                <td>Matrix</td>
+                <td>1999</td>
+                <td>Sci-Fi</td>
+                <td>136 min</td>
+                <td>Plantea preguntas sobre la realidad</td>
+            </tr>
+            <tr>
+                <td>Jojo Rabbit</td>
+                <td>2019</td>
+                <td>Drama/Comedia</td>
+                <td>108 min</td>
+                <td>Mezcla humor con temas profundos</td>
+            </tr>
+            <tr>
+                <td>El club de la pelea</td>
+                <td>1999</td>
+                <td>Drama</td>
+                <td>139 min</td>
+                <td>Critica el consumismo moderno</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- etiqueta hr, separa secciones -->
+    <hr>
+    
+    <section id="sugerir">
+        <h2>Sugiere una Película</h2>
+        <p>¿Conoces alguna película que debería estar en nuestra lista? <b>¡Cuéntanos!</b></p>
+        <br>
+        
+        <!-- formulario de contacto con validacion local -->
+        <form id="form-sugerir"> <!-- id para javascript -->
+            <label for="titulo">Título de la película:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <br><br>
+            
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director" required>
+            <br><br>
+            
+            <label for="year">Año:</label>
+            <input type="number" id="year" name="year" min="1900" max="2025" required>
+            <br><br>
+            
+            <label for="email">Tu email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="porque">¿Por qué la recomiendas?</label>
+           <input type="text" id="titulo" name="titulo" required>
+    
+    <!-- etiqueta semantica footer -->
+    <footer>
+        <p>&copy; 2025 Cine con Sentido. El arte de reflexionar a través del cine.</p>
+        <p class="clickeable">Síguenos para más recomendaciones</p> <!-- clase para evento javascript -->
+    </footer>
+    
+    <!-- archivo javascript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
