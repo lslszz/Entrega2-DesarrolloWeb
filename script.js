@@ -31,4 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
     elemClickeable.addEventListener('click', function() {
         alert('¡Gracias por visitarnos! 😊');
     });
+
+    document.addEventListener('keydown', function(event) {
+    // Comprueba si la tecla presionada es la letra 'e' (o 'E' para mayúsculas)
+    if (event.key === 'e' || event.key === 'E') {
+        // Muestra un mensaje en la consola (opcional, para verificación)
+        console.log('Tecla "e" presionada. Reiniciando la página...');
+
+        // Reinicia la página web
+        location.reload();
+
+        // Opcional: Evita la acción predeterminada de la tecla (aunque 'e' no suele tener una acción predeterminada significativa)
+        // event.preventDefault();
+    }
+});
 })
