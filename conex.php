@@ -1,8 +1,8 @@
 <?php
-$servername = "mysql.inf.uct.cl";
-$username = "imellado";
-$password = "imellado"; 
-$dbname = "imellado"; 
+$servername = "localhost";
+$username = "root";
+$password = ""; 
+$dbname = "desarrolloweb"; 
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
